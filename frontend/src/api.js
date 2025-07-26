@@ -1,9 +1,14 @@
 // src/api.js
 import axios from 'axios';
 
+const baseURL =
+  import.meta.env.MODE === 'production'
+    ? 'https://dearie-backend.onrender.com'
+    : '/api'; // 개발 환경에서는 Vite 프록시 사용
+
 const api = axios.create({
-  baseURL: '/api',         // Vite proxy에 의해 localhost:4000으로 포워딩됩니다
-  withCredentials: true,   // 필요 시 쿠키 전송을 허용
+  baseURL,
+  withCredentials: true,
 });
 
 export default api;
