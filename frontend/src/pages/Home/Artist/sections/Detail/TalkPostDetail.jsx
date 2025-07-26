@@ -204,7 +204,7 @@ const TalkPostDetail = () => {
           setPostData({
             type: 'user',
             profileName: localStorage.getItem('userName') || '순간의 윈터',
-            profileImg: localStorage.getItem('profileImage'),
+            profileImg: localStorage.getItem('profileImage') || 'artistSection/profileImg9.png',
             content: entry.text,
             images: entry.images || [],
             links: entry.links || [],
@@ -240,7 +240,7 @@ const TalkPostDetail = () => {
     
     // 사용자가 작성한 댓글을 ArtistPostDetail 형식으로 변환
     const formattedUserComments = savedUserComments.map(comment => ({
-      name: comment.author || comment.name || myName,
+      name: comment.name || comment.author || '알 수 없음',
       time: comment.time || '방금 전',
       text: comment.content || comment.text,
       liked: comment.liked || false,
@@ -598,7 +598,7 @@ const TalkPostDetail = () => {
                           opacity: '0.2'}}>
                       </span>    
                       {/* 데이터에서 온 댓글이거나 본인 댓글인 경우 삭제, 그 외에는 신고 */}
-                      {(cmt.name === myName && !cmt.isInitial) ? (
+                      {(cmt.time === '방금 전') ? (
                         <div className='userActionBox'>
                           <button onClick={() => {
                             setDeleteTarget(idx);

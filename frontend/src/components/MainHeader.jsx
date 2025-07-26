@@ -151,7 +151,7 @@ useEffect(() => {
         id: 'artistName',
         element: (
           <span style={{ marginLeft: 8, color: '#fff', fontSize: 17, fontWeight: 500 }}>
-            {artist && artist.name ? artist.name : 'My Pick'}
+            {artist && artist.titleName ? artist.titleName : 'My Pick'}
           </span>
         ),
       }

@@ -879,13 +879,13 @@ Xartist: [
           {
             talkCommentImg:'artistSection/TXTProfileImg10.png',
             talkName: 'TXT사랑꾼',
-            talkTime: '1시간전',
+            talkTime: '1시간 전',
             talkText: '내일도 TXT!!',
           },
           {
             talkCommentImg:'artistSection/TXTProfileImg9.png',
             talkName: '카페인은나의친구',
-            talkTime: '방금 전',
+            talkTime: '1시간 전',
             talkText: '우리 오빠들 최고',
           },
         ],

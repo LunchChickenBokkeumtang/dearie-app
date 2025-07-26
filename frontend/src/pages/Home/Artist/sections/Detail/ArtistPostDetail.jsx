@@ -350,7 +350,7 @@ const ArtistPostDetail = () => {
                   <div className="overlay" onClick={() => setReportTarget(null)}></div>
                   <div className="reportButtonBox">
                     <span></span>
-                    {cmt.name === myName ? (
+                    {cmt.time === '방금 전' ? (
                       <div className='deletBox'>
                         <button onClick={() => {
                           setDeleteTarget(idx);
