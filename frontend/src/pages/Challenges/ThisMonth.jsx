@@ -24,7 +24,7 @@ import rank_IVE from '../../assets/Challenge/rank_IVE.png'
 // 팬덤랭크 유저 리스트 : 에스파
 import winter from '../../assets/Challenge/AespauserList/winter.png'
 import ticketing from '../../assets/Challenge/AespauserList/ticketing.png'
-import Karining from '../../assets/Challenge/AespauserList/Karining.png'
+import Karining from '../../assets/Challenge/AespauserList/karining.png'
 import mongmong from '../../assets/Challenge/AespauserList/mongmong.png'
 import next from '../../assets/Challenge/AespauserList/next.png'
 import Karidoong from '../../assets/Challenge/AespauserList/Karidoong.png'
